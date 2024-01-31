@@ -1,0 +1,25 @@
+div.table {
+  border: 3px solid black;
+  position: relative;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+}
+
+div.table > div.line {
+  display: flex;
+  flex-direction: row;
+}
+
+div.table > div.line > div {
+  width: 20%;
+  height: 120px;
+  display: block;
+}
+div.table > div.line > div.black {
+  background-color: black;
+}
+div.table > div.line > div.white {
+  background-color: white;
+}
