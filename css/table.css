@@ -1,25 +1,65 @@
-div.table {
-  border: 3px solid black;
-  position: relative;
-  top: 1px;
-  bottom: 1px;
-  left: 1px;
-  right: 1px;
-}
 
-div.table > div.line {
+body {
+}
+table {
+  display: flex;
+  justify-content: center;
+}
+tbody {
+  border: 4px solid black;
+}
+tr {
+  /* position: relative; */
+  /* height: 20%; */
   display: flex;
   flex-direction: row;
 }
-
-div.table > div.line > div {
-  width: 20%;
-  height: 120px;
-  display: block;
+td {
+  /* display: block; */
+  width: 155px;
+  height: 75px;
+  padding: 0px;
 }
-div.table > div.line > div.black {
+
+.black {
   background-color: black;
 }
-div.table > div.line > div.white {
+.white {
   background-color: white;
+}
+.a {
+  position: absolute;
+  /* margin: 5px; */
+  width: 120px;
+}
+.a > h1 {
+  margin-bottom: 37px;
+  text-align: end;
+}
+.b {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  float: right;
+  width: auto;
+}
+.b > h1 {
+  text-align: left;
+
+  margin: 19px 0px;
+  transform: translateX(-117px);
+}
+img {
+  text-align: center;
+  width: 100%;
+}
+div.headtext{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+div.headtext>h1{
+  margin:0px 71px ;
 }
