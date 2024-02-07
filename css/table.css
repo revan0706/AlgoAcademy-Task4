@@ -1,4 +1,3 @@
-
 body {
 }
 table {
@@ -6,19 +5,29 @@ table {
   justify-content: center;
 }
 tbody {
-  border: 4px solid black;
+  padding: 0px 15px;
+  border: 2px solid black;
 }
 tr {
-  /* position: relative; */
-  /* height: 20%; */
   display: flex;
   flex-direction: row;
 }
-td {
-  /* display: block; */
+td.Table {
   width: 155px;
   height: 75px;
   padding: 0px;
+}
+td.number {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+td.number.borderRight {
+  border-right: 2px solid black;
+}
+td.number.borderleft {
+  rotate: 180deg;
+  border-right: 2px solid black;
 }
 
 .black {
@@ -29,7 +38,6 @@ td {
 }
 .a {
   position: absolute;
-  /* margin: 5px; */
   width: 120px;
 }
 .a > h1 {
@@ -54,12 +62,34 @@ img {
   text-align: center;
   width: 100%;
 }
-div.headtext{
+div.headtext {
   display: flex;
   width: 100%;
   justify-content: center;
   text-align: center;
 }
-div.headtext>h1{
-  margin:0px 71px ;
+div.headtext > h1 {
+  margin: 0px 71px;
+}
+
+tr.textTop,
+tr.textBottom {
+  justify-content: center;
+  display: flex;
+  gap: 11%;
+  position: relative;
+  margin: 0px 17px;
+}
+tr.textTop > td {
+  rotate: 180deg;
+}
+tr.textTop {
+  border-bottom: 2px solid black;
+}
+tr.textTop > td,
+tr.textBottom > td {
+  font-size: 28px;
+}
+tr.textBottom {
+  border-top: 2px solid black;
 }
